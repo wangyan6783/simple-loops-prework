@@ -14,6 +14,7 @@ def loop_iterator(number_of_times)
     break if times < number_of_times
     puts phrase
     times += 1
+  end
 end
 
 def times_iterator(number_of_times)
@@ -22,21 +23,27 @@ def times_iterator(number_of_times)
   number_of_times.times do
     puts phrase
   end
-  
 end
 
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  times = 0
+  while times < number_of_times 
+    puts phrase
+  end
 end
 
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
   # hint: use a counter to tell the until loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
-
+  times = 0
+  until times == number_of_times
+    puts phrase
+    times += 1
+  end
 end
 
 def for_iterator(number_of_times)
